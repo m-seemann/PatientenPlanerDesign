@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+header {
+    padding: 20px;
+}
+
+.row {
+    padding-left: 20px;
+}
+
+.calendar-body {
+    width: 100%;
+    table-layout: fixed;
+}
+
+    .calendar-body .top td {
+        border-top: 1px solid #c8c6c4;
+        border-left: 1px solid #c8c6c4;
+        border-right: 1px solid #c8c6c4;
+        border-bottom: 1px dashed #c8c6c4;
+        height: 25px;
+    }
+
+    .calendar-body .bottom td {
+        border-bottom: 1px solid #c8c6c4;
+        border-left: 1px solid #c8c6c4;
+        border-right: 1px solid #c8c6c4;
+        border-top: 1px dashed #c8c6c4;
+        height: 25px;
+    }
+
+    .calendar-body .hour{
+        border: 1px solid #c8c6c4 !important;
+    }
+
+    .calendar-body td:hover, .calendar-head .day:hover {
+        background-color: aquamarine;
+    }
+
+.calendar-head {
+    width: calc(100% - 18px);
+    table-layout: fixed;
+}
+
+    .calendar-head .header {
+        background-color: #deecf9;
+    }
+
+    .calendar-head .day {
+        border-bottom: 1px solid #c8c6c4;
+        border-left: 1px solid #c8c6c4;
+        border-right: 1px solid #c8c6c4;
+        height: 50px;
+        vertical-align: text-top;
+        padding: 5px;
+    }
+
+.scroll {
+    /*height: 100%;*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hour {
+    vertical-align: text-top;
+    padding: 5px;
+    width: 45px;
+}
